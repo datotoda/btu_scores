@@ -3,13 +3,21 @@ Android application for BTU scores
 
 You cannot use this project directly, however you can analyze the code and adapt it to your own.
 
+## Functionality
+ - Display scores
+ - Save scores in local storage
+ - Refresh live data
+ - Each item have refresh toggle
+ - User can modify scores
+ - Manual refresh
+ - Calculate rank score 
 
 ## Used Technologies
-- Room
-- Fragment Navigation
-- ViewModel
-- LiveData
-- [Fuel](https://github.com/kittinunf/fuel)
+ - Room
+ - Fragment Navigation
+ - ViewModel
+ - LiveData
+ - [Fuel](https://github.com/kittinunf/fuel)
 
 ### Screenshots
 
