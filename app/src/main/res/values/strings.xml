@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BTU scores</string>
+    <string name="refresh">refresh</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="save">save</string>
+    <string name="download">download</string>
+    <string name="summary">Summary</string>
+    <string name="edit_list">Edit list</string>
+    <string name="Edit">Edit</string>
+    <string name="not_synchronized">Not Synchronized</string>
+    <string name="_synchronized">Synchronized</string>
+    <string name="title">Title</string>
+    <string name="score">Score</string>
+    <string name="order">Order</string>
+    <string name="dialog_cancel_button">Cancel</string>
+    <string name="edit_detail_turn_off_sync_dialog_title">Turn off synchronization</string>
+    <string name="edit_detail_turn_off_sync_dialog_body">If you turn off sync on this course, you won\'t be able to turn it back on.</string>
+    <string name="edit_detail_turn_off_sync_dialog_positive">Turn off</string>
+    <string name="edit_detail_delete_dialog_title">Delete course</string>
+    <string name="edit_detail_delete_dialog_body">Are you sure that you want to delete the course?</string>
+    <string name="edit_detail_delete_dialog_positive">Delete</string>
+    <string name="edit_list_download_dialog_title">Import Courses</string>
+    <string name="edit_list_download_dialog_positive">Import</string>
+    <string name="edit_list_download_dialog_neutral">Import all</string>
+    <string name="summary_raiting">საბოლოო რეიტინგი</string>
+    <string name="btu_parser_data_url"></string>
+    <string name="btu_parser_check_url"></string>
+    <string name="summary_refreshing">Refreshing...</string>
+    <string name="summary_end_refresh">End Refresh</string>
+    <string name="summary_refresh_is_unavailable">Refresh is Unavailable</string>
+    <string name="no_internet_you_are_offline">You Are Offline</string>
+    <string name="new_course_title">New course</string>
+</resources>

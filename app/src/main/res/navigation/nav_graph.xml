@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/summaryFragment">
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.datotoda.btu_scores.fragments.SummaryFragment"
+        android:label="@string/summary"
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_summaryFragment_to_editListFragment"
+            app:destination="@id/editListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editListFragment"
+        android:name="com.datotoda.btu_scores.fragments.EditListFragment"
+        android:label="@string/edit_list"
+        tools:layout="@layout/fragment_edit_list" >
+        <action
+            android:id="@+id/action_editListFragment_to_editDetailFragment"
+            app:destination="@id/editDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editDetailFragment"
+        android:name="com.datotoda.btu_scores.fragments.EditDetailFragment"
+        android:label="@string/Edit"
+        tools:layout="@layout/fragment_edit_detail" >
+        <argument
+            android:name="courseId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

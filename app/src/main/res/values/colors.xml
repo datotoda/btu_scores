@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="pink_700">#FF7D1935</color>
+    <color name="pink_500">#FFB42B51</color>
+    <color name="pink_400">#FFC50463</color>
+    <color name="pink_200">#fe017e</color>
+    <color name="gray">#FFD5D5D5</color>
+
+    <color name="icon_color">#FFFFFFFF</color>
+</resources>
