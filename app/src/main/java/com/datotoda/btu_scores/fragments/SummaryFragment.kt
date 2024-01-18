@@ -122,12 +122,18 @@ class SummaryFragment : Fragment() {
             return
         }
         courseViewModel.viewModelScope.launch {
+            val r = Fuel.get(getString(R.string.firebase_get_domain_url))
+            if (r.statusCode != 200) {
+                return@launch
+            }
+            val domain = r.body.replace("\"", "")
+
             if (showToast) {
                 Toast.makeText(context, getString(R.string.summary_refreshing), Toast.LENGTH_SHORT).show()
-                Fuel.get(getString(R.string.btu_parser_check_url))
+                Fuel.get(url = "https://$domain/${getString(R.string.btu_parser_check_path)}")
             }
 
-            val request = Fuel.get(getString(R.string.btu_parser_data_url))
+            val request = Fuel.get(url = "https://$domain/${getString(R.string.btu_parser_data_path)}")
 
             if (request.statusCode == 200) {
                 val btuParserApiDecoder = BtuParserApiDecoder(request.body)

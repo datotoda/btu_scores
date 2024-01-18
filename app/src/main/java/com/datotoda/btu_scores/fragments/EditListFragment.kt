@@ -142,7 +142,13 @@ class EditListFragment : Fragment() {
             return
         }
         courseViewModel.viewModelScope.launch {
-            val request = Fuel.get(getString(R.string.btu_parser_data_url))
+            val r = Fuel.get(getString(R.string.firebase_get_domain_url))
+            if (r.statusCode != 200) {
+                return@launch
+            }
+            val domain = r.body.replace("\"", "")
+
+            val request = Fuel.get(url = "https://$domain/${getString(R.string.btu_parser_data_path)}")
 
             if (request.statusCode == 200) {
                 val btuParserApiDecoder = BtuParserApiDecoder(request.body)

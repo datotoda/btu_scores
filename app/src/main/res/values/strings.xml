@@ -24,8 +24,9 @@
     <string name="edit_list_download_dialog_positive">Import</string>
     <string name="edit_list_download_dialog_neutral">Import all</string>
     <string name="summary_raiting">საბოლოო რეიტინგი</string>
-    <string name="btu_parser_data_url"></string>
-    <string name="btu_parser_check_url"></string>
+    <string name="btu_parser_data_path">rest/v1/data</string>
+    <string name="btu_parser_check_path">check</string>
+    <string name="firebase_get_domain_url"></string>
     <string name="summary_refreshing">Refreshing...</string>
     <string name="summary_end_refresh">End Refresh</string>
     <string name="summary_refresh_is_unavailable">Refresh is Unavailable</string>
